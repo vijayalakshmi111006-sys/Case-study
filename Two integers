@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        int sensorReading1 = 10;
+        int sensorReading2 = 20;
+
+        System.out.println("Before swapping:");
+        System.out.println("Sensor Reading 1: " + sensorReading1);
+        System.out.println("Sensor Reading 2: " + sensorReading2);
+
+        // Swap without using an extra variable
+        sensorReading1 = sensorReading1 ^ sensorReading2;
+        sensorReading2 = sensorReading1 ^ sensorReading2;
+        sensorReading1 = sensorReading1 ^ sensorReading2;
+
+        System.out.println("After swapping:");
+        System.out.println("Sensor Reading 1: " + sensorReading1);
+        System.out.println("Sensor Reading 2: " + sensorReading2);
+    }
+}
